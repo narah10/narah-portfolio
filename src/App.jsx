@@ -1,22 +1,22 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import About from './components/About'
-import Projects from './components/Projects'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
-import Profile from './components/Profile'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Landing from './Landing'
+import About from '../src/components/About'
+import Skills from '../src/components/Skills'
+import Projects from '../src/components/Projects'
+import Contact from '../src/components/Contact'
 
 const App = () => {
   return (
-    <div className="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-      <Profile />
-      {/* <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact /> */}
-
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Landing/>} />
+        <Route path="/About" element={<About/>} />
+        <Route path="/Skills" element={<Skills/>} />
+        <Route path="/Projects" element={<Projects/>} />
+        <Route path="/Contact" element={<Contact/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
