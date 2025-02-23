@@ -8,7 +8,7 @@ export default function Content() {
     const [activeTab, setActiveTab] = React.useState('about')
     const tabs = ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT']
     return (
-      <div>
+      <div className=''>
         <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
             <ul className="flex flex-wrap -mb-px text-sm font-medium text-center" role="tablist">
                 {tabs.map((tab) => (
