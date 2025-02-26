@@ -10,7 +10,14 @@
     <title>Na Rah Hernandez</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="email" name="email" />
+        <input type="text" name="subject" />
+        <textarea name="message" ></textarea>
+        <button>Submit</button>
+      </form>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
