@@ -1,12 +1,12 @@
 import React from 'react'
 import About from './About'
-import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import ExperienceSection from './ExperienceSection'
 
 export default function Content() {
     const [activeTab, setActiveTab] = React.useState('about')
-    const tabs = ['ABOUT', 'SKILLS', 'PROJECTS', 'CONTACT']
+    const tabs = ['ABOUT', 'EXPERIENCE', 'PROJECTS', 'CONTACT']
     return (
       <div className=''>
         <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
@@ -31,7 +31,7 @@ export default function Content() {
         </div>
         <div>
             {activeTab === 'about' && <About />}
-            {activeTab === 'skills' && <Skills />}
+            {activeTab === 'experience' && <ExperienceSection />}
             {activeTab === 'projects' && <Projects />}
             {activeTab === 'contact' && <Contact />}
         </div>

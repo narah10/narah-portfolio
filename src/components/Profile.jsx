@@ -4,7 +4,7 @@ import { GoArrowUpRight } from "react-icons/go";
 export default function Profile() {
     return (
         <div className='m-auto place-self-center lg:col-start-3 lg:col-span-8'>
-            <div className="grid grid-cols-5 border-2 border-gray-950  rounded-sm">
+            <div className="grid grid-cols-5 border-2 border-gray-400 rounded-sm">
                 <div className="col-span-3 my-auto pl-10">
                     <p className="font-passion text-gray-800">Oct 11 1998</p>
                     <h1 className="font-bold py-0 font-passion text-7xl text-gray-800">NA RAH</h1>
