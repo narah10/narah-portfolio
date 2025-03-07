@@ -1,26 +1,46 @@
 export const skills = [
+    {"level": "Advanced", "skillsList": 
+        [
+            "JavaScript ES6+",
+            "React",
+            "CSS / SASS",
+            "HTML5",
+            "Tailwind CSS",
+            "Adobe Illustrator",
+            "Adobe InDesign",
+            "Figma",
+            "VS Code",
+            "Git",
+            "Jira",
+            "GraphQL",
+            "REST APIs",
+        ]
+    },
     {
-        name: "HTML",
-        icon: "devicon-html5-plain colored",
-        },
-        {
-        name: "CSS",
-        icon: "devicon-css3-plain colored",
-        },
-        {
-        name: "JavaScript",
-        icon: "devicon-javascript-plain colored",
-        },
-        {
-        name: "React",
-        icon: "devicon-react-original colored",
-        },
-        {
-        name: "Node.js",
-        icon: "devicon-nodejs-plain colored",
-        },
-        {
-        name: "Express",
-        icon: "devicon-express-original colored",
-    }
-  ];
+        "level": "Competent (1 year)", "skillsList":
+        [
+            "Cypress",
+            "Jest",
+            "Node.js",
+            "TypeScript",
+            "Express",
+            "Next.js",
+            "Svelte",
+            "Python",
+            "SQL",
+            "Adobe Photoshop",
+            "MySQL Workbench",
+            "MongoDB",
+        ]
+    },
+    {
+        "level": "Light Exposure (6 Months)", "skillsList":
+        [
+            "C#",
+            "SupaBase",
+            "PostgreSQL",
+            "Prisma",
+            "Storybook",
+        ]
+    }  
+  ]

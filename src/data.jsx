@@ -31,4 +31,4 @@ export const projects = [
       image: "./project-4.gif",
       link: "https://pythonbootcamp.com",
     },
-  ];
+  ]
