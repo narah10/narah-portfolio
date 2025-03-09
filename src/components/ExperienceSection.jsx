@@ -3,9 +3,8 @@ import { experiences } from '../experience'
 
 export default function ExperienceSection() {
     return (
-        <section id="experience" className='px-10'>
-        <h3 className="font-semibold py-0 font-passion text-3xl text-gray-700">Experience</h3>
-        <p>I earned my bachelor's degree from <span className="font-bold">Brigham Young University–Idaho</span>, where I developed a strong foundation in web development and software engineering principles. Through internships at <span className="font-bold">BYU-I and FamilySearch</span>, I’ve worked on full-stack and front-end projects, contributing to API integrations, performance optimizations, and accessible design. I love working on projects that solve real problems and improve the way people interact with technology.</p>
+        <section id="experience" className='px-10 my-10'>
+        <h3 className="mb-4 text-3xl tracking-tight font-extrabold py-0 text-gray-800">Work History</h3>
         <div>
           <ol className="relative border-s border-gray-200 dark:border-gray-700">
             {experiences.map((experience, index) => (

@@ -1,6 +1,8 @@
 import React from 'react'
+import { Suspense, lazy } from "react"
 import ContentContainer from './components/ContentContainer'
-import Profile from './components/Profile'
+
+const Profile = lazy(() => import('./components/Profile'))
 
 const Landing = () => {
     const [dark, setDark] = React.useState(false)
@@ -13,9 +15,12 @@ const Landing = () => {
         darkModeHandler()
     }
   return (
-    <div className="grid px-4 py-8 mx-auto gap-8 lg:py-16 lg:grid-cols-12">
-        <button onClick={handleClick}>Click Me</button>
-      <Profile />
+    <div className="grid py-8 gap-8 lg:py-16 lg:grid-cols-12 mx-auto px-4">
+        <button className="absolute" onClick={handleClick}>Click Me</button>
+        <Suspense fallback={<div>Loading...</div>}>
+            <Profile />
+        </Suspense>
+
       <ContentContainer />
     </div>
   )

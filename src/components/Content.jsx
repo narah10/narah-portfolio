@@ -16,9 +16,9 @@ export default function Content() {
                         <button
                             className={`${
                                 activeTab === tab.toLowerCase()
-                                    ? 'border-gray-300 dark:text-gray-900 dark:border-gray-700'
-                                    : 'border-transparent dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-400'
-                            } w-full py-4 px-1 text-gray-900 dark:text-gray-500 hover:text-gray-700 dark:hover:text-gray-400`}
+                                    ? ' dark:text-gray-900 text-blue-800 dark:border-gray-700'
+                                    : 'border-transparent dark:text-gray-500 hover:text-blue-600 dark:hover:text-gray-400'
+                            } w-full py-4 px-1 text-gray-900 dark:text-gray-500 dark:hover:text-gray-400 hover:text-blue-600`}
                             onClick={() => setActiveTab(tab.toLowerCase())}
                             role="tab"
                             aria-selected={activeTab === tab.toLowerCase()}
