@@ -51,5 +51,15 @@ export const experiences = [
       "Debugged and optimized code to improve performance and maintainability.",
       "Implemented best practices in version control and code documentation."
     ]
+  },
+  {
+    "title": "Volunteer Experience",
+    "company": "BYU–Idaho CIT Department",
+    "date": "Jan 2023 – September 2023",
+    "responsibilities": [
+      "Led a team of 5 student developers and managed the successful development and launch of the school’s hackathon website",
+      "Trained and assisted other student developers with React.js and participated in code reviews.",
+      "Created an engaging and user-friendly hackathon website with JavaScript, React.js, HTML, and CSS, focusing on intuitive design and easy access to essential information",
+    ]
   }
 ]
