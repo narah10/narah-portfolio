@@ -16,7 +16,7 @@ const Landing = () => {
     }
   return (
     <div className="grid py-8 gap-8 lg:py-16 lg:grid-cols-12 mx-auto px-4">
-        <button className="absolute" onClick={handleClick}>Click Me</button>
+        {/* <button className="absolute" onClick={handleClick}>Click Me</button> */}
         <Suspense fallback={<div>Loading...</div>}>
             <Profile />
         </Suspense>

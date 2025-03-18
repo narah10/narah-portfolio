@@ -8,8 +8,8 @@ export default function Project() {
           <h1 className="sm:text-4xl tracking-tight font-extrabold text-gray-900 text-3xl mb-4">
           Featured Projects
           </h1>
-        <div className="flex flex-wrap">
-          {projects.map((project) => (
+        <div className="flex flex-wrap gap-10 justify-center">
+          {/* {projects.map((project) => (
             <a
               target="_blank"
               href={project.link}
@@ -28,10 +28,26 @@ export default function Project() {
                   <h1 className="title-font text-lg font-medium text-white mb-3">
                     {project.title}
                   </h1>
-                  <p className="leading-relaxed">{project.description}</p>
+                  <p className="leading-relaxed text-white">{project.description}</p>
                 </div>
               </div>
             </a>
+          ))} */}
+          {projects.map((project) => (
+          <div class="max-w-md rounded overflow-hidden shadow-lg">
+          <img class="w-full" src={project.image} alt="Sunset in the mountains"/>
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">{project.subtitle} {project.title}</div>
+            <p class="text-gray-700 text-base">
+            {project.description}
+            </p>
+          </div>
+        {/* <div class="px-6 pt-4 pb-2">
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
+          <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+        </div> */}
+      </div>
           ))}
         </div>
       </div>
