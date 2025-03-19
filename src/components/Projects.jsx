@@ -1,7 +1,7 @@
 import { projects } from "../data"
 
 export default function Project() {
-  console.log(projects)
+  // console.log(projects)
     return (
     <section id="projects" className="my-10 px-10">
       <div className="">
@@ -34,11 +34,11 @@ export default function Project() {
             </a>
           ))} */}
           {projects.map((project) => (
-          <div class="max-w-md rounded overflow-hidden shadow-lg">
-          <img class="w-full" src={project.image} alt="Sunset in the mountains"/>
-          <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">{project.subtitle} {project.title}</div>
-            <p class="text-gray-700 text-base">
+          <div className="max-w-md rounded overflow-hidden shadow-lg">
+          <img className="w-full" src={project.image} alt={project.alt}/>
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">{project.subtitle} {project.title}</div>
+            <p className="text-gray-700 text-base">
             {project.description}
             </p>
           </div>
