@@ -9,11 +9,10 @@ export default function AboutSection() {
         <h1 className="mb-4 text-5xl tracking-tight font-extrabold">A Bit About <span className="text-accentColor">Me</span>.</h1>
         <div className="grid md:grid-cols-3 gap-5 justify-center items-center">
           <div className="md:col-span-2">
-            <p className="my-2">I'm a web developer with experience in <span className="font-bold text-accentLightColor">React, JavaScript, GraphQL</span>, and modern web technologies.</p>
-            <p>At BYU-I and FamilySearch, I’ve worked on full-stack and front-end projects, contributing to API integrations, performance optimizations, and accessible design. I enjoy building solutions that enhance user experiences and make technology more intuitive.</p>
-            <p className="my-2">I'm a web developer with experience in <span className="font-bold text-accentLightColor">React, JavaScript, GraphQL</span>, and modern web technologies.</p>
-            <p>At BYU-I and FamilySearch, I’ve worked on full-stack and front-end projects, contributing to API integrations, performance optimizations, and accessible design. I enjoy building solutions that enhance user experiences and make technology more intuitive.</p>
-            
+          <p className="my-5">I'm a web developer with experience in <span className="font-bold text-accentLightColor">React, JavaScript, GraphQL</span>, and modern web technologies.</p>
+          <p className="my-5">I graduated from <span className="font-bold text-accentLightColor">BYU–Idaho</span> with a Bachelor's degree in <span className="font-bold text-accentLightColor">Software Engineering</span> and a minor in <span className="font-bold text-accentLightColor">Web Design</span>. I originally started with <span className="font-bold text-accentLightColor">Web Design</span> because it was something I was passionate about, but after taking a programming class, I discovered a real enjoyment for coding and decided to pursue it further.</p>
+          <p className="my-5">I especially enjoy front-end development because it allows me to blend my creative side with problem-solving. I have fun finding effective ways to structure layouts and visually communicate a website’s message to its users.</p>
+          <p className="my-5">I've had the opportunity to apply these skills at <span className="font-bold text-accentLightColor">BYU–Idaho</span> and <span className="font-bold text-accentLightColor">FamilySearch</span>, working on both full-stack and front-end projects. My contributions have included API integrations, performance improvements, and designing with accessibility in mind. I enjoy building solutions that create intuitive and meaningful user experiences.</p>
           </div>
           <img src={hero} className="max-w-xs mx-auto rounded-full bg-accentLightColor" alt="Image of NaRah"/>
         </div>

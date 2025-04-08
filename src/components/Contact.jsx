@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 export default function Contact() {
     return (
         <div>
@@ -5,7 +8,7 @@ export default function Contact() {
             <h1 className="mb-4 text-5xl tracking-tight font-extrabold">Let's<span className="text-accentColor"> Connect</span>.</h1>
             <p className="">Have a question or a project in mind?</p>
                 <p className="mb-10"> Drop your details, and I'll reach out to you as soon as possible!</p>
-                <form name="contact" method="post" data-netlify="true" onSubmit="submit">
+                <form name="contact" method="post" data-netlify="true" onSubmit="submit" action="/success">
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="mb-5">
                         <label for="email" className="block mb-2 text-sm font-medium text-accentLightColor dark:text-gray-300">Your email</label>

@@ -28,18 +28,20 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contacts from './pages/Contact';
 import Footer from './components/Footer';
+import Success from './pages/Success';
 
 function App() {
   return (
     <Router>
       <div>
         <Navbar />
-        <main className="max-w-4xl mx-auto mt-20 px-5 md:px-0">
+        <main className="max-w-5xl mx-auto mt-10 px-5 md:px-0">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contacts/>}/>
+            <Route path="/success" element={<Success/>}/>
           </Routes>
         </main>
         <footer>
