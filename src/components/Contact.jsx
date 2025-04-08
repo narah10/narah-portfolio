@@ -1,14 +1,30 @@
 import React from 'react';
-
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
+    const navigate = useNavigate();
+
+    const handleSubmit = event => {
+      event.preventDefault();
+  
+      const form = event.target;
+      const formData = new FormData(form);
+  
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => navigate("/success"))
+        .catch(error => alert(error));
+    };
     return (
         <div>
             <section className="text-white" >
             <h1 className="mb-4 text-5xl tracking-tight font-extrabold">Let's<span className="text-accentColor"> Connect</span>.</h1>
             <p className="">Have a question or a project in mind?</p>
                 <p className="mb-10"> Drop your details, and I'll reach out to you as soon as possible!</p>
-                <form name="contact" method="post" data-netlify="true" onSubmit="submit" action="/success">
+                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="mb-5">
                         <label for="email" className="block mb-2 text-sm font-medium text-accentLightColor dark:text-gray-300">Your email</label>
