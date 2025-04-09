@@ -6,8 +6,7 @@ export default function Project() {
     <section id="projects" className="my-10">
       <div className="text-white">
       <h1 className="mb-4 text-5xl tracking-tight font-extrabold"> <span className="text-accentColor">Projects</span> I've played with.</h1>
-      <p className="my-2">I'm a web developer with experience in <span className="font-bold text-accentLightColor">React, JavaScript, GraphQL</span>, and modern web technologies.</p>
-      <p>At BYU-I and FamilySearch, I’ve worked on full-stack and front-end projects, contributing to API integrations, performance optimizations, and accessible design. I enjoy building solutions that enhance user experiences and make technology more intuitive.</p>
+      <p className="my-2">These are personal projects I’ve explored out of curiosity and a drive to grow as a developer. I researched, designed, and built most of them from scratch, often experimenting with new tools, frameworks, and design ideas. Each one reflects my learning process and passion for creating accessible, user-friendly web experiences.</p>
         <div className="flex gap-10 flex-wrap mt-10">
           {projects.map((project) => (
           <div className="max-w-md bg-bgDark rounded overflow-hidden shadow-lg hover:shadow-lg hover:shadow-accentLightColor">

@@ -15,8 +15,8 @@ const Home = () => {
                     </div>
                     <div className="col-span-2">
                         <h1 className="text-white mb-4 text-5xl tracking-tight font-extrabold"><span className="text-accentColor">Hi!</span> Welcome.</h1>
-                        <p className="text-white mt-5"> Hi! I am a <span className="underline underline-offset-4 decoration-accentColor">web developer</span> passionate about <span className="underline underline-offset-4 decoration-accentColor">accessibility</span> and <span className="underline underline-offset-4 decoration-accentColor">user-centric</span> functionality. I create intuitive, inclusive experiences that make the web work for everyone.</p>
-                        <p className="text-white mt-5">I have 2 years of professional experience working on user eccentric React pages</p>
+                        <p className="text-white mt-5">I'm a  <span className="underline underline-offset-4 decoration-accentColor">web developer</span> with a passion for <span className="underline underline-offset-4 decoration-accentColor">accessibility</span> and <span className="underline underline-offset-4 decoration-accentColor">user-focused design</span>. I build intuitive, inclusive React applications that ensure the web is usable and enjoyable for everyone.</p>
+                        <p className="text-white mt-5">With 2 years of professional experience, I’ve crafted engaging, user-centered interfaces that put people first. Take a look around—check out my work and let’s explore how we can build something great together.</p>
                     </div>
                 </div>
                 <div className="mb-20">
